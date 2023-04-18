@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "chucknorrisapi"
+version = "0.1.0"
+description = ""
+authors = ["Felipe Bastos <felipebastos@ifce.edu.br>"]
+readme = "README.md"
+
+[tool.taskipy.tasks]
+dev = { cmd = 'python manage.py runserver', help = 'Executa o servidor dev.'}
+migrate = { cmd = 'python manage.py makemigrations & python manage.py migrate', help = 'Migra tudo.'}
+imports = { cmd = 'isort .', help = 'Ordena os imports'}
+format = { cmd = 'task imports & black .', help ='Formata tudo.'}
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "4.1.7"
+python-dotenv = "^1.0.0"
+
+[tool.isort]
+profile='black'
+
+
+[tool.poetry.group.dev.dependencies]
+taskipy = "^1.10.4"
+black = "^23.3.0"
+isort = "^5.12.0"
+pre-commit = "^3.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
