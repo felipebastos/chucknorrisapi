@@ -16,11 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from .views import calc, digaOi, home
+from chucknorrisapi import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", home, name="home"),
-    path("calc/<val1>/<op>/<val2>/", calc),
-    path("oi/", digaOi),
+    path("", views.home, name="home"),
+    path("calc/<val1>/<op>/<val2>/", views.calc),
+    path("oi/", views.digaOi),
+    path("quote/", views.quote),
 ]
