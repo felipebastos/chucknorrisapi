@@ -1,10 +1,8 @@
-from django.shortcuts import HttpResponse, render
-
-from django.http import JsonResponse
-
 import json
 
 import requests
+from django.http import JsonResponse
+from django.shortcuts import HttpResponse, render
 
 
 def home(request):

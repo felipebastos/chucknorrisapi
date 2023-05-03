@@ -38,6 +38,7 @@ ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
 INSTALLED_APPS = [
     "chucknorrisapi",
     "polls.apps.PollsConfig",
+    "escola.apps.EscolaConfig",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",

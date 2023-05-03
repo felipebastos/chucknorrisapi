@@ -1,0 +1,56 @@
+************* Module chucknorrisapi.settings
+chucknorrisapi\settings.py:97:0: C0301: Line too long (91/88) (line-too-long)
+************* Module chucknorrisapi.views
+chucknorrisapi\views.py:34:0: C0301: Line too long (130/88) (line-too-long)
+chucknorrisapi\views.py:35:0: C0301: Line too long (259/88) (line-too-long)
+chucknorrisapi\views.py:36:0: C0301: Line too long (105/88) (line-too-long)
+chucknorrisapi\views.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+chucknorrisapi\views.py:8:0: C0116: Missing function or method docstring (missing-function-docstring)
+chucknorrisapi\views.py:11:11: C0103: Variable name "v" doesn't conform to snake_case naming style (invalid-name)
+chucknorrisapi\views.py:21:0: C0116: Missing function or method docstring (missing-function-docstring)
+chucknorrisapi\views.py:21:24: C0103: Argument name "op" doesn't conform to snake_case naming style (invalid-name)
+chucknorrisapi\views.py:25:0: C0116: Missing function or method docstring (missing-function-docstring)
+chucknorrisapi\views.py:25:0: C0103: Function name "digaOi" doesn't conform to snake_case naming style (invalid-name)
+chucknorrisapi\views.py:32:0: C0116: Missing function or method docstring (missing-function-docstring)
+chucknorrisapi\views.py:41:11: W3101: Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely (missing-timeout)
+************* Module escola.admin
+escola\admin.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+************* Module escola.apps
+escola\apps.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+escola\apps.py:4:0: C0115: Missing class docstring (missing-class-docstring)
+************* Module escola.models
+escola\models.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+escola\models.py:5:0: C0115: Missing class docstring (missing-class-docstring)
+escola\models.py:13:0: C0115: Missing class docstring (missing-class-docstring)
+escola\models.py:18:0: C0115: Missing class docstring (missing-class-docstring)
+escola\models.py:22:0: C0115: Missing class docstring (missing-class-docstring)
+************* Module escola.tests
+escola\tests.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+escola\tests.py:7:0: C0115: Missing class docstring (missing-class-docstring)
+escola\tests.py:23:4: C0116: Missing function or method docstring (missing-function-docstring)
+escola\tests.py:31:0: C0115: Missing class docstring (missing-class-docstring)
+escola\tests.py:44:4: C0116: Missing function or method docstring (missing-function-docstring)
+escola\tests.py:52:0: C0115: Missing class docstring (missing-class-docstring)
+escola\tests.py:72:4: C0116: Missing function or method docstring (missing-function-docstring)
+************* Module escola.views
+escola\views.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+escola\views.py:1:0: W0611: Unused render imported from django.shortcuts (unused-import)
+************* Module polls.admin
+polls\admin.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+************* Module polls.apps
+polls\apps.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+polls\apps.py:4:0: C0115: Missing class docstring (missing-class-docstring)
+************* Module polls.models
+polls\models.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+polls\models.py:5:0: C0115: Missing class docstring (missing-class-docstring)
+polls\models.py:12:0: C0115: Missing class docstring (missing-class-docstring)
+************* Module polls.tests
+polls\tests.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+polls\tests.py:1:0: W0611: Unused TestCase imported from django.test (unused-import)
+************* Module polls.views
+polls\views.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+polls\views.py:1:0: W0611: Unused render imported from django.shortcuts (unused-import)
+
+------------------------------------------------------------------
+Your code has been rated at 7.39/10 (previous run: 7.39/10, +0.00)
+
