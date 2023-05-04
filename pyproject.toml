@@ -6,13 +6,17 @@ authors = ["Felipe Bastos <felipebastos@ifce.edu.br>"]
 readme = "README.md"
 
 [tool.taskipy.tasks]
+audit = { cmd = 'pip-audit', help = 'Verifica falhas de segurança das dependências do projeto' }
+secure = { cmd = 'bandit -r chucknorrisapi escola polls', help = 'Gera relatório de falhas de segurança no código.' }
 dev = { cmd = 'python manage.py runserver', help = 'Executa o servidor dev.'}
 migrate = { cmd = 'python manage.py makemigrations & python manage.py migrate', help = 'Migra tudo.'}
 imports = { cmd = 'isort .', help = 'Ordena os imports'}
 format = { cmd = 'task imports & black .', help ='Formata tudo.'}
 lint = { cmd = 'pylint -f text . > linter-report.txt', help = 'Checagem estática' }
+onboard = { cmd = 'pre-commit install', help = 'Instala os hooks de pre-commit' }
 test = { cmd = 'python manage.py test', help = 'Roda os testes' }
 coverage = { cmd = 'coverage run --source="." manage.py test', help = 'Verifica a cobertura de testes' }
+prospect = { cmd = 'prospector', help = 'Verifica segurança, complexidade e etc' }
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -34,6 +38,9 @@ pre-commit = "^3.2.2"
 pylint = "^2.17.3"
 pylint-django = "^2.5.3"
 coverage = "^7.2.5"
+bandit = "^1.7.5"
+pip-audit = "^2.5.4"
+prospector = "^1.9.0"
 
 [build-system]
 requires = ["poetry-core"]
