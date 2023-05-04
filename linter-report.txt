@@ -1,5 +1,5 @@
 ************* Module chucknorrisapi.settings
-chucknorrisapi\settings.py:97:0: C0301: Line too long (91/88) (line-too-long)
+chucknorrisapi\settings.py:96:0: C0301: Line too long (91/88) (line-too-long)
 ************* Module chucknorrisapi.views
 chucknorrisapi\views.py:34:0: C0301: Line too long (130/88) (line-too-long)
 chucknorrisapi\views.py:35:0: C0301: Line too long (259/88) (line-too-long)
@@ -15,15 +15,18 @@ chucknorrisapi\views.py:32:0: C0116: Missing function or method docstring (missi
 chucknorrisapi\views.py:41:11: W3101: Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely (missing-timeout)
 ************* Module escola.admin
 escola\admin.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+escola\admin.py:9:0: C0115: Missing class docstring (missing-class-docstring)
+escola\admin.py:20:4: C0116: Missing function or method docstring (missing-function-docstring)
+escola\admin.py:24:4: C0116: Missing function or method docstring (missing-function-docstring)
 ************* Module escola.apps
 escola\apps.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 escola\apps.py:4:0: C0115: Missing class docstring (missing-class-docstring)
 ************* Module escola.models
 escola\models.py:1:0: C0114: Missing module docstring (missing-module-docstring)
-escola\models.py:5:0: C0115: Missing class docstring (missing-class-docstring)
-escola\models.py:13:0: C0115: Missing class docstring (missing-class-docstring)
-escola\models.py:18:0: C0115: Missing class docstring (missing-class-docstring)
-escola\models.py:22:0: C0115: Missing class docstring (missing-class-docstring)
+escola\models.py:12:0: C0115: Missing class docstring (missing-class-docstring)
+escola\models.py:25:0: C0115: Missing class docstring (missing-class-docstring)
+escola\models.py:30:0: C0115: Missing class docstring (missing-class-docstring)
+escola\models.py:37:0: C0115: Missing class docstring (missing-class-docstring)
 ************* Module escola.tests
 escola\tests.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 escola\tests.py:7:0: C0115: Missing class docstring (missing-class-docstring)
@@ -51,6 +54,5 @@ polls\tests.py:1:0: W0611: Unused TestCase imported from django.test (unused-imp
 polls\views.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 polls\views.py:1:0: W0611: Unused render imported from django.shortcuts (unused-import)
 
-------------------------------------------------------------------
-Your code has been rated at 7.39/10 (previous run: 7.39/10, +0.00)
-
+-----------------------------------
+Your code has been rated at 7.54/10
