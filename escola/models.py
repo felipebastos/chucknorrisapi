@@ -1,6 +1,5 @@
 from django.db import models
 
-
 CATEGORIA = (
     ("DOC", "Docente"),
     ("DIS", "Discente"),
@@ -21,10 +20,13 @@ class Autor(models.Model):
     def __str__(self) -> str:
         return f"PhD. {self.nome}"
 
+    class Meta:
+        verbose_name_plural = "autores"
+
 
 class Livro(models.Model):
     titulo = models.CharField(max_length=200)
-    autor = models.ForeignKey(Autor, on_delete=models.CASCADE)
+    autor = models.ForeignKey(Autor, on_delete=models.CASCADE, related_name="livros")
 
 
 class Artigo(models.Model):
@@ -40,3 +42,10 @@ class Submissao(models.Model):
 
     data_aplicacao = models.DateField(auto_now=True)
     aprovado = models.BooleanField(default=False)
+
+    def __str__(self) -> str:
+        return f"{self.artigo} - {self.autor}"
+
+    class Meta:
+        verbose_name = "submissão"
+        verbose_name_plural = "submissões"
