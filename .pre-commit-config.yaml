@@ -28,6 +28,9 @@ repos:
         additional_dependencies:
             - "django"
             - "pylint_django"
+            - "djangorestframework"
+            - "markdown"
+            - "django-filter"
             - "python-dotenv"
 -   repo: https://github.com/PyCQA/bandit
     rev: 1.7.4
